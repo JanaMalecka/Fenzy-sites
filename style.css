@@ -130,39 +130,56 @@ nav ul.show {
     display: none;
   }
 }
+
 /*.........hero section........*/
 .hero {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 0;
   justify-content: center;
-  gap: 2.5rem;
-  max-width: 68.75rem;
-  margin: auto;
 }
 .hero img {
   height: auto;
-  width: 20rem;
-  margin-top: 2rem;
-  border-radius: 6px;
-  box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  width: 100%;
 }
-
 .bio {
-  width: 25rem;
+  margin: 2rem auto;
+  width: 80%;
   padding: 0.625rem;
   border-radius: 6px;
   box-shadow: 0px 2px 15px 2px var(--primary-shadow);
 }
-
 .bio h1 {
   margin-bottom: var(--bottom-margin);
 }
-
 .bio p {
   line-height: var(--line-height);
   padding: 0.3rem 0;
 }
+@media screen and (min-width: 420px) {
+}
+@media screen and (min-width: 720px) {
+  .hero {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 2.5rem;
+    max-width: 80%;
+    margin: auto;
+  }
+  .hero img {
+    height: auto;
+    width: 20rem;
+    margin-top: 2rem;
+    border-radius: 6px;
+    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+  }
 
+  .bio {
+    margin-top: 5rem;
+    width: 25rem;
+  }
+}
 /*.........more-about..........*/
 .more-about {
   background-color: var(--bg-color);
