@@ -210,24 +210,19 @@ nav ul.show {
 .more-about p {
   line-height: var(--line-height);
   padding: 0.4rem;
+  text-align: justify;
 }
 
 @media screen and (min-width: 420px) {
   .more-about {
     padding: 1rem 3rem;
   }
-  .more-about p {
-    text-align: justify;
-  }
 }
 
-@media screen and (min-width: 720px) {
-}
 /*..........services.........*/
 .services {
   background-color: var(--bg-color);
   padding: 32px 0;
-  margin-top: 2rem;
 }
 
 .services-pic {
@@ -237,19 +232,23 @@ nav ul.show {
 
 .services-container {
   display: flex;
-
+  flex-direction: column;
   justify-content: center;
+
+  margin: 2rem auto;
 }
 .services-title {
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 0.8rem 0 1rem 0;
 }
 
 .services-card {
   text-align: center;
-  width: 25%;
+  width: 90%;
   height: fit-content;
   padding: 1rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .services-container p {
@@ -268,8 +267,31 @@ nav ul.show {
   background-color: #fff;
   border-radius: 11px;
   box-shadow: 0 3px 10px var(--primary-shadow);
+  margin: 1rem auto;
+}
 
-  margin: 10px;
+@media screen and (min-width: 420px) {
+  .services-container {
+    display: flex;
+  }
+  .services-card {
+    text-align: center;
+    width: 80%;
+    height: fit-content;
+    padding: 1rem;
+  }
+}
+@media screen and (min-width: 720px) {
+  .services-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .services-card {
+    text-align: center;
+    width: 20%;
+    height: fit-content;
+    padding: 1rem;
+  }
 }
 
 /*..............contact.........*/
