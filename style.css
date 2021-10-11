@@ -335,8 +335,12 @@ nav ul.show {
 .contact p {
   align-items: center;
   justify-content: center;
+  padding-bottom: 1rem;
 }
-
+.contact-name {
+  color: var(--primary-color);
+  font-weight: var(--bold-font);
+}
 .contact h2 {
   text-align: center;
   margin-bottom: var(--bottom-margin-2);
