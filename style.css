@@ -343,11 +343,12 @@ nav ul.show {
 }
 .contact h2 {
   text-align: center;
+  margin-top: 3rem;
   margin-bottom: var(--bottom-margin-2);
 }
 
 .contact-form-container {
-  max-width: 40.75rem;
+  width: 90%;
   margin: 0 auto;
   padding: 0.938rem;
   border-radius: 5px;
@@ -359,9 +360,11 @@ nav ul.show {
   font-weight: var(--bold-font);
   color: var(--primary-color);
 }
-
+.form-control {
+  text-align: left;
+}
 .contact-form-container textarea {
-  min-height: 6.25rem;
+  min-height: 2rem;
   font-size: 14px;
 }
 
@@ -400,7 +403,16 @@ nav ul.show {
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
-
+@media screen and (min-width: 420px) {
+  .contact-form-container {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 720px) {
+  .contact-form-container {
+    width: 50%;
+  }
+}
 /*...........social icons.......*/
 .socials {
   display: flex;
