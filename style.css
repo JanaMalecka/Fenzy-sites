@@ -413,40 +413,62 @@ nav ul.show {
     width: 50%;
   }
 }
-/*...........social icons.......*/
-.socials {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 2%;
-  bottom: 50%;
+/*...........social icons...fixed to the contact info....*/
+.socials-row {
+  flex-direction: row;
 }
-
 .socicon {
   width: 2rem;
   height: 2rem;
 }
+.socials-right-column {
+  display: none;
+}
+
+/*...........social icons...fixed to the right....*/
+
+@media screen and (min-width: 420px) {
+  .socials-right-column {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 2%;
+    bottom: 50%;
+  }
+  .socials-row {
+    display: none;
+  }
+}
+
 /*........footer .........*/
+
 footer {
   width: 100%;
   padding: 3rem;
-
+  display: flex;
   text-align: center;
   background-color: var(--primary-color);
   color: var(--bg-color);
   font-size: 1rem;
   font-weight: var(--bold-font);
 }
+.footer-center {
+  text-align: center;
+  width: 100%;
+}
+.copy-bottom {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
 /*.......scroll-up....*/
+
 .scroll-up {
   z-index: 1;
-  position: sticky;
-  right: 2%;
-  bottom: 2%;
   cursor: pointer;
 }
 
 .up-arrow {
   width: 2rem;
   height: 2rem;
+  margin-left: 1rem;
 }
